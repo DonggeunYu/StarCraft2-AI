@@ -7,6 +7,9 @@ import random
 import cv2
 import numpy as np
 import time
+import aiohttp
+
+
 
 #os.environ["SC2PATH"] = '/starcraftstuff/StarCraftII/'
 
@@ -20,7 +23,7 @@ class SentdeBot(sc2.BotAI):
         self.do_something_after = 0
         self.train_data = []
 
-    def on_end(self, game_result):
+    async def on_end(self, game_result):
         print('--- on_end called ---')
         print(game_result)
 
@@ -39,6 +42,7 @@ class SentdeBot(sc2.BotAI):
         await self.build_offensive_force()
         await self.intel()
         await self.attack()
+
 
     def random_location_variance(self, enemy_start_location):
         x = enemy_start_location[0]
