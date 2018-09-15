@@ -1,15 +1,13 @@
 import sc2
-from sc2 import run_game, maps, Race, Difficulty, position, Result
+from sc2 import run_game, maps, Race, Difficulty, Result
 from sc2.player import Bot, Computer
+from sc2 import position
 from sc2.constants import NEXUS, PROBE, PYLON, ASSIMILATOR, GATEWAY, \
- CYBERNETICSCORE, STARGATE, VOIDRAY, OBSERVER, ROBOTICSFACILITY
+ CYBERNETICSCORE, STARGATE, VOIDRAY, SCV, DRONE, ROBOTICSFACILITY, OBSERVER
 import random
 import cv2
 import numpy as np
 import time
-import aiohttp
-
-
 
 #os.environ["SC2PATH"] = '/starcraftstuff/StarCraftII/'
 
@@ -23,12 +21,12 @@ class SentdeBot(sc2.BotAI):
         self.do_something_after = 0
         self.train_data = []
 
-    async def on_end(self, game_result):
+    def on_end(self, game_result):
         print('--- on_end called ---')
         print(game_result)
 
         if game_result == Result.Victory:
-            np.save("train_data/{}.npy".format(str(int(time.time()))), np.array(self.train_data))
+            np.save("./train_data/{}.npy".format(str(int(time.time()))), np.array(self.train_data))
 
     async def on_step(self, iteration):
         self.iteration = iteration
@@ -42,7 +40,6 @@ class SentdeBot(sc2.BotAI):
         await self.build_offensive_force()
         await self.intel()
         await self.attack()
-
 
     def random_location_variance(self, enemy_start_location):
         x = enemy_start_location[0]
