@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b002fdd8-d907-424d-9a2a-51b431dd2a32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nova/Examples/s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nova/Examples/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/StarCraft2-AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StarCraft2-AI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nova/Examples/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Examples/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Examples/s.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/StarCraft2_AI$.coverage" NAME="ㅅㅂㅊ Coverage Results" MODIFIED="1536667775363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/test" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$distributed_workers.coverage" NAME="distributed_workers Coverage Results" MODIFIED="1536731387052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1536756971600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1537020689070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$proxy_rax.coverage" NAME="proxy_rax Coverage Results" MODIFIED="1536673651228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$cyclone_push.coverage" NAME="cyclone_push Coverage Results" MODIFIED="1536672331890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$s.coverage" NAME="s Coverage Results" MODIFIED="1536999564292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
@@ -28,36 +27,36 @@
     <session id="213395502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="20" />
+          <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="20" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="py" value="4223" />
+          <entry key="py" value="5269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="4223" />
+          <entry key="Python" value="5269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -65,26 +64,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="-22">
+              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
                 <marker date="1537017033536" expanded="true" signature="633:642" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Examples/s.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="581">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <marker date="1536999564275" expanded="true" signature="9:14" ph="..." />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,6 +121,7 @@
         <option value="$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/s.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/test.py" />
+        <option value="$PROJECT_DIR$/Nova/Examples/train.py" />
       </list>
     </option>
   </component>
@@ -133,9 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="949" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -145,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.s">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration name="distributed_workers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StarCraft2-AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -309,9 +307,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.s" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.s" />
         <item itemvalue="Python.distributed_workers" />
         <item itemvalue="Python.proxy_rax" />
       </list>
@@ -334,12 +332,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14652015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14835165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36020407" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36020407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,23 +380,23 @@
     <entry file="file://$PROJECT_DIR$/python-sc2/examples/protoss/threebase_voidray.py" />
     <entry file="file://$PROJECT_DIR$/python-sc2/sc2/data.py" />
     <entry file="file://$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
-    <entry file="file://$PROJECT_DIR$/Nova/Examples/s.py">
+    <entry file="file://$PROJECT_DIR$/Nova/Examples/s.py" />
+    <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="-22">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
           <folding>
-            <marker date="1536999564275" expanded="true" signature="9:14" ph="..." />
+            <marker date="1537017033536" expanded="true" signature="633:642" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
+    <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="581">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1537017033536" expanded="true" signature="633:642" ph="..." />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
