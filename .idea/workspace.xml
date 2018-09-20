@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b002fdd8-d907-424d-9a2a-51b431dd2a32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Nova/Examples/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StarCraft2-AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StarCraft2-AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nova/Examples/s.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Examples/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Examples/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Examples/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Examples/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +24,14 @@
     <session id="213395502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,26 +61,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+            <state relative-caret-position="318">
+              <caret line="404" column="38" lean-forward="true" selection-start-line="404" selection-start-column="38" selection-end-line="404" selection-end-column="38" />
               <folding>
-                <marker date="1537017033536" expanded="true" signature="633:642" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -332,7 +326,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14835165" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15018316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,22 +375,19 @@
     <entry file="file://$PROJECT_DIR$/python-sc2/sc2/data.py" />
     <entry file="file://$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
     <entry file="file://$PROJECT_DIR$/Nova/Examples/s.py" />
-    <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
+    <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-          <folding>
-            <marker date="1537017033536" expanded="true" signature="633:642" ph="..." />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
+    <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="318">
+          <caret line="404" column="38" lean-forward="true" selection-start-line="404" selection-start-column="38" selection-end-line="404" selection-end-column="38" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
