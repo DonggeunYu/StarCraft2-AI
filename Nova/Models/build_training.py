@@ -2,10 +2,11 @@ import sc2
 from sc2 import run_game, maps, Race, Difficulty, Result
 from sc2.player import Bot, Computer
 from sc2 import position
-from sc2.constants import NEXUS, PROBE, PYLON, ASSIMILATOR, GATEWAY, \
- CYBERNETICSCORE, STARGATE, VOIDRAY, SCV, DRONE, ROBOTICSFACILITY, OBSERVER, \
- ZEALOT, STALKER
-
+from sc2.constants import ARMORY, BARRACKS, BUNKER, \
+ COMMANDCENTER, ENGINEERINGBAY, FACTORY, FUSIONCORE, \
+  GHOSTACADEMY, MISSILETURRET, ORBITALCOMMAND, \
+   PLANETARYFORTRESS, REACTOR, REFINERY, SENSORTOWER, \
+    SUPPLYDEPOT, TECHLAB
 class main(sc2.BotAI):
     def __init__(self):
         print("Start StarCraft II")
@@ -20,18 +21,15 @@ class main(sc2.BotAI):
         self.time = (self.state.game_loop / 22.4) / 60
 
         await self.distribute_workers()
-        await self.build_pylon()
-        for probe in self.units(PROBE):
-            pos = probe.position
-            print(pos)
+        await self.build_supplydepot()
 
 
-    async def build_pylon():
-        nexsues = self.units(NEXUS).ready
-        if nexuses.exists:
-            if self.can_afford(PYLON):
-                await self.build_pylon()
+    async def build_supplydepot(self):
+        commandcenters = self.units(COMMANDCENTER).ready
+        if commandcenters.exists:
+            if self.can_afford(SUPPLYDEPOT):
+                await self.build(SUPPLYDEPOT, near=commandcenters.first)
 # StarCraftII Start
 run_game(maps.get("AbyssalReefLE"), [
-    Bot(Race.Protoss, main()),
-    Computer(Race.Protoss, Difficulty.Easy)], realtime=True)
+    Bot(Race.Terran, main()),
+    Computer(Race.Zerg, Difficulty.Easy)], realtime=False)
