@@ -10,9 +10,12 @@ from sc2.constants import ARMORY, BARRACKS, BUNKER, \
 from sc2.constants import SCV, MARINE
 from sc2.constants import RICHMINERALFIELD
 import cv2
+import tensorflow as tf
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+import model
+from PIL import Image
 
 class main(sc2.BotAI):
     def __init__(self):
@@ -46,15 +49,21 @@ class main(sc2.BotAI):
     def map_cv2(self):
         game_data = np.zeros((self.game_info.map_size[1], self.game_info.map_size[0], 3), np.uint8)
 
-        for unit in self.units().ready:
+        for unit in self.units(COMMANDCENTER).ready:
             pos = unit.position
             # rectangle(img, start, end, color, thickness)
             cv2.rectangle(game_data, (int(pos[0]), int(pos[1])), (int(int(pos[0]) + unit.radius), int(int(pos[1]) + unit.radius)), (255, 255, 255), 1)
 
-        for minerals in self.state.mineral_field:
-            minerals_pos = minerals.position
-            cv2.rectangle(game_data, (int(minerals_pos[0]), int(minerals_pos[1])), (int(int(minerals_pos[0]) + minerals.radius), int(int(minerals_pos[1]) + unit.radius)), (255, 255, 255), 1)
+        for unit in self.units(SUPPLYDEPOT).ready:
+            pos = unit.position
+            # rectangle(img, start, end, color, thickness)
+            cv2.rectangle(game_data, (int(pos[0]), int(pos[1])), (int(int(pos[0]) + unit.radius), int(int(pos[1]) + unit.radius)), (255, 255, 255), 1)
 
+
+        '''for minerals in self.state.mineral_field:
+            minerals_pos = minerals.position
+            cv2.rectangle(game_data, (int(minerals_pos[0]), int(minerals_pos[1])), (int(int(minerals_pos[0]) + minerals.radius), int(int(minerals_pos[1]) + minerals.radius)), (255, 255, 255), 1)
+        '''
         # flip horizontally to make our final fix in visual representation:
         flipped = cv2.flip(game_data, 0)
         resized = cv2.resize(flipped, dsize=None, fx=2, fy=2)
@@ -100,8 +109,10 @@ class main(sc2.BotAI):
                         if min_distance > minerals_commandcenter_distance:
                             min_distance = minerals_commandcenter_distance
                             min_cnt = cnt
-                    await self.build(SUPPLYDEPOT, near=position.Point2(position.Pointlike((0, 0))))
-                    print(self.state.mineral_field[min_cnt].position.towards(position.Point2(position.Pointlike((-10, -10)))))
+                    await self.build(SUPPLYDEPOT, near=self.random_location_variance(self.units(COMMANDCENTER).first.position))
+                    map = self.map_cv2()
+                    im = Image.fromarray(map)
+                    im.save('Map_Image/' + str(self.time) + '.png')
 
 
     async def graph(self):
@@ -116,25 +127,10 @@ class main(sc2.BotAI):
         # for game_info: https://github.com/Dentosal/python-sc2/blob/master/sc2/game_info.py#L162
         # flip around. It's y, x when you're dealing with an array.
 
+
         cv2.imshow('Intel', self.map_cv2())
         cv2.waitKey(1)
 
-
-    async def build_refinery(self):
-        for commandcenter in self.units(COMMANDCENTER).ready:
-            vaspenes = self.state.vespene_geyser.closer_than(10.0, commandcenter)
-            for vaspene in vaspenes:
-                if not self.can_afford(REFINERY):
-                    break
-                worker = self.select_build_worker(vaspene.position)
-                if worker is None:
-                    break
-                if not self.units(REFINERY).closer_than(1.0, vaspene).exists:
-                    await self.do(worker.build(REFINERY, vaspene))
-
-
-    def build_location():
-        return (50, 50)
 
 run_game(maps.get("AbyssalReefLE"), [
     Bot(Race.Terran, main()),
