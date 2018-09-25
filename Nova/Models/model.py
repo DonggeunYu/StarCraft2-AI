@@ -1,4 +1,2 @@
-import cv2
-import numpy as np
-
-cv2.imwrite("filename.png", np.zeros((10,10)))
+a = "(32.0, 122.5)"
+print(tuple(map(int, a))
