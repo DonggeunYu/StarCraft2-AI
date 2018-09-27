@@ -51,36 +51,32 @@ class main(sc2.BotAI):
             if self.can_afford(SUPPLYDEPOT) and not self.already_pending(SUPPLYDEPOT):
                     game_data = np.zeros((self.game_info.map_size[1], self.game_info.map_size[0], 3), np.uint8)
 
-
-                    min_cnt_first = ()
-                    min_data_first = 1000
-                    min_cnt_second = ()
-                    min_data_second = 1000
-                    min_cnt_third = ()
-                    min_data_third = 1000
-
+                    minerals_commandcenter_distance = []
+                    min_cnt = {}
                     for minerals in self.state.mineral_field:
-                        minerals_commandcenter_distance = self.distance(minerals.position, self.units(COMMANDCENTER).first.position)
+                        minerals_commandcenter_distance.append(
+                            self.distance(minerals.position, self.units(COMMANDCENTER).first.position))
 
-                        if min_data_first > minerals_commandcenter_distance:
-                            min_cnt_third = min_cnt_second
-                            min_cnt_second = min_cnt_first
-                            min_cnt_first = (int(minerals.position[0]), int(minerals.position[1]))
-                            min_data_first = minerals_commandcenter_distance
+                        min_cnt.update({str(minerals_commandcenter_distance[-1]): (
+                        int(minerals.position[0]), int(minerals.position[1]))})
+
+                    minerals_commandcenter_distance.sort()
+                    min_cnt_first = min_cnt[str(minerals_commandcenter_distance[0])]
+                    min_cnt_second = min_cnt[str(minerals_commandcenter_distance[1])]
+                    min_cnt_third = min_cnt[str(minerals_commandcenter_distance[2])]
 
                     gas_cnt_first = ()
                     gas_data_first = 1000
                     gas_cnt_second = ()
-                    gas_data_second = 1000
 
                     for vespen in self.state.vespene_geyser:
-                        vespen_commandcenter_distance = self.distance(vespen.position, self.units(COMMANDCENTER).first.position)
+                        vespen_commandcenter_distance = self.distance(vespen.position,
+                                                                      self.units(COMMANDCENTER).first.position)
 
                         if gas_data_first >= vespen_commandcenter_distance:
                             gas_cnt_second = gas_cnt_first
                             gas_cnt_first = (int(vespen.position[0]), int(vespen.position[1]))
                             gas_data_first = vespen_commandcenter_distance
-
 
                     a = [min_cnt_first, min_cnt_second, min_cnt_third, gas_cnt_first, gas_cnt_second]
                     random_ = random.choices(a)
