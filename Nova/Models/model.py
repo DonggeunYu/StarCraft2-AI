@@ -32,6 +32,7 @@ for row in csv_reader:
 file.close()
 
 
+
 '''
 model = Sequential
 model.add(Dense(16, input_dim=6, init='uniform'))
