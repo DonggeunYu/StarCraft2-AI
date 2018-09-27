@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b002fdd8-d907-424d-9a2a-51b431dd2a32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5833333333333334.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5833333333333334.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5952380952380952.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5952380952380952.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6011904761904763.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6011904761904763.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6071428571428572.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6071428571428572.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0119047619047619.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0119047619047619.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4047619047619049.png" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4047619047619049.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/build_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/build_training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +22,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/StarCraft2_AI$.coverage" NAME="ㅅㅂㅊ Coverage Results" MODIFIED="1536667775363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/test" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$distributed_workers.coverage" NAME="distributed_workers Coverage Results" MODIFIED="1536731387052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1537020689070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1537974662839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$proxy_rax.coverage" NAME="proxy_rax Coverage Results" MODIFIED="1536673651228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$cyclone_push.coverage" NAME="cyclone_push Coverage Results" MODIFIED="1536672331890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$s.coverage" NAME="s Coverage Results" MODIFIED="1536999564292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$test.coverage" NAME="test Coverage Results" MODIFIED="1536668821280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/test" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$model.coverage" NAME="model Coverage Results" MODIFIED="1537802730802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$build_training.coverage" NAME="build_training Coverage Results" MODIFIED="1537887351214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$model.coverage" NAME="model Coverage Results" MODIFIED="1537977665325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$build_training.coverage" NAME="build_training Coverage Results" MODIFIED="1538023548374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -40,43 +48,43 @@
     <session id="213395502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
           <entry key="png" value="14" />
-          <entry key="py" value="29" />
+          <entry key="py" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="14" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="29" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="72" />
           <entry key="dummy" value="4" />
-          <entry key="py" value="7378" />
+          <entry key="py" value="8151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="76" />
-          <entry key="Python" value="7378" />
+          <entry key="Python" value="8151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -87,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4500">
-              <caret line="315" column="16" selection-start-line="315" selection-start-column="16" selection-end-line="315" selection-end-column="16" />
+            <state relative-caret-position="1368">
+              <caret line="288" selection-start-line="288" selection-end-line="288" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -96,11 +104,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova/Models/build_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="600">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1538023657222" expanded="true" signature="1249:1310" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/position.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -108,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/bot_ai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4425">
-              <caret line="304" selection-start-line="304" selection-end-line="304" />
+            <state relative-caret-position="3855">
+              <caret line="261" selection-start-line="261" selection-end-line="261" />
             </state>
           </provider>
         </entry>
@@ -117,26 +138,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="885">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,12 +171,16 @@
       <find>GAS</find>
       <find>MINERAL</find>
       <find>HEADLESS</find>
-      <find>print</find>
       <find>session</find>
       <find>close()</find>
       <find>on_end</find>
       <find>min_data_first</find>
       <find>supply_temp_append</find>
+      <find>cnt_g</find>
+      <find>supply_cnt</find>
+      <find>random_location_variance</find>
+      <find>intel</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,10 +195,10 @@
         <option value="$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/s.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/train.py" />
-        <option value="$PROJECT_DIR$/Nova/Models/model.py" />
-        <option value="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" />
         <option value="$PROJECT_DIR$/Nova/Examples/test.py" />
         <option value="$PROJECT_DIR$/Nova/Models/build_training.py" />
+        <option value="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" />
+        <option value="$PROJECT_DIR$/Nova/Models/model.py" />
       </list>
     </option>
   </component>
@@ -239,6 +258,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/donggeun/Documents/Github/StarCraft2-AI/Nova/Models/SUPPLYDEPOT.csv" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -402,12 +422,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15934066" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36020407" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36020407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -526,48 +546,58 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1010564076/builtins.py" />
+    <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/bot_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3855">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4500">
-          <caret line="315" column="16" selection-start-line="315" selection-start-column="16" selection-end-line="315" selection-end-column="16" />
+        <state relative-caret-position="1368">
+          <caret line="288" selection-start-line="288" selection-end-line="288" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/bot_ai.py">
+    <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/position.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4425">
-          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        <state relative-caret-position="705">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/main.py">
+    <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova/Models/build_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="600">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1538023657222" expanded="true" signature="1249:1310" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/build_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
