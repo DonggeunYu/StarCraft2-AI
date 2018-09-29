@@ -2,15 +2,35 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation
 import csv
-import sys
 
 
 file = open('./SUPPLYDEPOT.csv', 'r', encoding='utf-8')
 csv_reader = csv.reader(file)
 
+commandcenter = []
+mineral_1 = []
+mineral_2 = []
+mineral_3 = []
+vespen_1 = []
+vespen_2 = []
+
 for row in csv_reader:
-    print(row[0].split('"', "("))
+    for i in range(len(row)):
+        if i == 0:
+            commandcenter.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+        elif i == 1:
+            mineral_1.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+        elif i == 2:
+            mineral_2.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+        elif i == 3:
+            mineral_3.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+        elif i == 4:
+            vespen_1.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+        elif i == 5:
+            vespen_2.append([float(i) for i in row[i].split('"')[0].replace('(', '').replace(')', '').split(', ')])
+
 file.close()
+
 '''
 model = Sequential
 model.add(Dense(16, input_dim=6, init='uniform'))

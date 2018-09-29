@@ -114,7 +114,6 @@ class main(sc2.BotAI):
                                       (255, 255, 0), 1)
 
 
-
                         self.supply_position = supply_temp
                         fields = [self.units(COMMANDCENTER).first.position,
                                 min_cnt_first,
