@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b002fdd8-d907-424d-9a2a-51b431dd2a32" name="Default Changelist" comment="Update build_training.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nova/Models/build_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/build_training.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nova/Models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,13 +43,13 @@
           <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,7 +71,7 @@
         <counts>
           <entry key="csv" value="88" />
           <entry key="dummy" value="4" />
-          <entry key="py" value="9407" />
+          <entry key="py" value="9408" />
           <entry key="txt" value="29" />
         </counts>
       </usages-collector>
@@ -81,7 +79,7 @@
         <counts>
           <entry key="CSV" value="16" />
           <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="9407" />
+          <entry key="Python" value="9408" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -108,7 +106,7 @@
               <caret line="102" column="78" selection-start-line="102" selection-start-column="78" selection-end-line="102" selection-end-column="78" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1538038517366" expanded="true" signature="1249:1310" ph="..." />
+                <marker date="1538924868246" expanded="true" signature="1249:1310" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -227,7 +225,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -453,9 +451,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1633" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16483517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16656192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -476,7 +475,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49441788" weight="0.32967034" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49441788" weight="0.32967034" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50558215" side_tool="true" weight="0.32967034" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50558215" side_tool="true" visible="true" weight="0.32935262" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15567766" />
@@ -592,7 +591,6 @@
           <caret line="102" column="78" selection-start-line="102" selection-start-column="78" selection-end-line="102" selection-end-column="78" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1538038517366" expanded="true" signature="1249:1310" ph="..." />
           </folding>
         </state>
       </provider>
@@ -637,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
