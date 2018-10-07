@@ -2,7 +2,487 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b002fdd8-d907-424d-9a2a-51b431dd2a32" name="Default Changelist" comment="Update build_training.py">
-      <change beforePath="$PROJECT_DIR$/Nova/Models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nova/Models/build_supply_location/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Examples/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Examples/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.2857142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.4382440476190476.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.4404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5059523809523809.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.511904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5178571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5238095238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5297619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5357142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5416666666666666.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5476190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5535714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5595238095238096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5654761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5714285714285714.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5773809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5811011904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.581845238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5833333333333334.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5892857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.5952380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.599702380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6004464285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6011904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6071428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6086309523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.613095238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6183035714285714.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6190476190476191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.625.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.630952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.636904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6428571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6488095238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6547619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6607142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6666666666666666.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6726190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6785714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6845238095238096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6904761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.6964285714285715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7023809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7083333333333334.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7142857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7202380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7261904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7321428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7380952380952382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7440476190476191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.755952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.761904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7678571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7738095238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7797619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7857142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7916666666666666.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.7976190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8035714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8095238095238096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8154761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8214285714285715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8273809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8333333333333334.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8452380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8511904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8571428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8630952380952382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.8690476190476191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9464285714285715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9776785714285715.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9813988095238096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9836309523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9843750000000001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9910714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9925595238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/0.9940476190476191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.005952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0119047619047619.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.017857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.023809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0297619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0357142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0416666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0476190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0535714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0595238095238095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0654761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0714285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.0773809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1130952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1190476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.130952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.136904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1428571428571428.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.148809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1547619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1607142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.1964285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.255952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.261904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.2678571428571428.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.273809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.2797619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.2857142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3154761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3273809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3333333333333333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3392857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3511904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3571428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3630952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3690476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.375.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.380952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3816964285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.3861607142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.386904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.392857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.398809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4047619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4107142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.412202380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4166666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4226190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4285714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4345238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4464285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4523809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4583333333333333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4635416666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4642857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4702380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4761904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4821428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4880952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.4940476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5297619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5357142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5416666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5476190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5535714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5595238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5654761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5714285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5773809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5833333333333333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5892857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.5952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6011904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6071428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6130952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6190476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.625.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.630952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.636904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.642857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6473214285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.648809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6547619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6607142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6666666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6726190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6785714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6845238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6904761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.6964285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7023809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7083333333333333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7142857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7202380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7261904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7321428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7380952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7440476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.755952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.761904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.767857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.773809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7797619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7827380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7857142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7916666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.7976190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8035714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8095238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8154761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8273809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8333333333333333.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8392857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8511904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8571428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8630952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8690476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.8750000000000002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.880952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.886904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.892857142857143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.898809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9047619047619049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9107142857142858.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.916666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9226190476190477.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9285714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9345238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9464285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9583333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9642857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9702380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9761904761904765.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9821428571428572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9880952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/1.9940476190476193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0000000000000004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.005952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.011904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0178571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0238095238095237.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0297619047619047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.035714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.041666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.047619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.053571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0595238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0654761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0714285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0773809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0833333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0892857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.0952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1011904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.107142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.113095238095238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.119047619047619.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1250000000000004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.130952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.136904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1428571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.148809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.154761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1607142857142856.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1666666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.172619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1741071428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.178571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1845238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1904761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.1964285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.202380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2083333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2142857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2202380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2261904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.255952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.261904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2678571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.273809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.279761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2857142857142856.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.2916666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.297619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.303571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3095238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3154761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.327380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3333333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3392857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3474702380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3511904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.357142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3630952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.369047619047619.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.375.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.380952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.386904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.3928571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.398809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4107142857142856.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4166666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.422619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.428571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4345238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4404761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4464285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.452380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4583333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4642857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4702380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4761904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.482142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.4880952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.494047619047619.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.505952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.511904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5178571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.523809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.529761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5357142857142856.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5416666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5714285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.577380952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5833333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5892857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.593005952380952.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.5952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6011904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.607142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6130952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.619047619047619.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.625.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.630952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.636904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6428571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.648809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.654761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6607142857142856.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6666666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.672619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.678571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6845238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6904761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.6964285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.761904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.7678571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.773809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.779761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.785714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.7916666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.797619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.803571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8095238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8154761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.827380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8333333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8392857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8511904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.857142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8630952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8690476190476195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.875.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.880952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.886904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.8928571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.898809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.904761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.910714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9166666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.922619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.928571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9345238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9404761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9464285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9583333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9642857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9702380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9761904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.982142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9880952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/2.9940476190476195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.005952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.011904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0178571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.023809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.029761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.035714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0416666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.047619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.053571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0595238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0654761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0714285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.077380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0833333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0892857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.0952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.154761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.160714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.1666666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.172619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.178571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.1845238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.1904761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.1964285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.202380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2083333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2142857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2202380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2261904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.232142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2380952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2440476190476195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.255952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.261904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2678571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.273809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.279761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.285714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.2916666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.297619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.303571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3095238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3154761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.327380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3333333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3392857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3511904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.357142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3630952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3690476190476195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.375.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.380952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.386904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.3928571428571432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.398809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.404761904761905.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.410714285714286.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4166666666666665.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.422619047619048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.428571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4345238095238098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4404761904761907.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4464285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.452380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4583333333333335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4642857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4702380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4761904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.482142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.4880952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.5952380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.6011904761904763.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.607142857142857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.6130952380952386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.7142857142857144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.7202380952380953.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.8214285714285716.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/3.928571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.0476190476190474.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.136904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.1607142857142865.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.166666666666667.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.1726190476190474.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.255952380952381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.386904761904762.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.523809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.553571428571429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/4.9523809523809526.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/7.023809523809524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/7.404761904761906.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/Map_Image/7.815476190476191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/build_supply_location/SUPPLYDEPOT.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/build_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nova/Models/build_supply_location/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/filename.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nova/Models/model.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +493,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/StarCraft2_AI$.coverage" NAME="ㅅㅂㅊ Coverage Results" MODIFIED="1536667775363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/test" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$distributed_workers.coverage" NAME="distributed_workers Coverage Results" MODIFIED="1536731387052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$train.coverage" NAME="train Coverage Results" MODIFIED="1538028402773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$train.coverage" NAME="train Coverage Results" MODIFIED="1538927411697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1537974662839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$proxy_rax.coverage" NAME="proxy_rax Coverage Results" MODIFIED="1536673651228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$cyclone_push.coverage" NAME="cyclone_push Coverage Results" MODIFIED="1536672331890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-sc2/examples/terran" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$s.coverage" NAME="s Coverage Results" MODIFIED="1536999564292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Examples" />
     <SUITE FILE_PATH="coverage/StarCraft2_AI$test.coverage" NAME="test Coverage Results" MODIFIED="1536668821280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/test" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$model.coverage" NAME="model Coverage Results" MODIFIED="1538044565155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
-    <SUITE FILE_PATH="coverage/StarCraft2_AI$build_training.coverage" NAME="build_training Coverage Results" MODIFIED="1538043070224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$aa.coverage" NAME="aa Coverage Results" MODIFIED="1538932633645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models/build_supply_location" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$model.coverage" NAME="model Coverage Results" MODIFIED="1538932602318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
+    <SUITE FILE_PATH="coverage/StarCraft2_AI$build_training.coverage" NAME="build_training Coverage Results" MODIFIED="1538932677261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nova/Models" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -40,46 +521,47 @@
     <session id="213395502">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="4" />
-          <entry key="png" value="14" />
-          <entry key="py" value="31" />
+          <entry key="SUPPLYDEPOT" value="1" />
+          <entry key="csv" value="5" />
+          <entry key="png" value="15" />
+          <entry key="py" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="1" />
-          <entry key="Image" value="14" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="31" />
+          <entry key="CSV" value="2" />
+          <entry key="Image" value="15" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="88" />
-          <entry key="dummy" value="4" />
-          <entry key="py" value="9410" />
+          <entry key="dummy" value="17" />
+          <entry key="py" value="10855" />
           <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="16" />
-          <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="9410" />
+          <entry key="PLAIN_TEXT" value="118" />
+          <entry key="Python" value="10855" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -88,86 +570,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
+        <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4095">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
+            <state relative-caret-position="296">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Models/build_training.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="102" column="78" selection-start-line="102" selection-start-column="78" selection-end-line="102" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1538924868246" expanded="true" signature="1249:1310" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/position.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/bot_ai.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3855">
-              <caret line="261" selection-start-line="261" selection-end-line="261" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///anaconda3/envs/conda/lib/python3.6/site-packages/sc2/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
+        <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/get_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -198,6 +616,7 @@
       <find>intel</find>
       <find>print</find>
       <find>game_data</find>
+      <find>Map_Im</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,10 +631,12 @@
         <option value="$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/s.py" />
         <option value="$PROJECT_DIR$/Nova/Examples/test.py" />
-        <option value="$PROJECT_DIR$/Nova/Examples/train.py" />
         <option value="$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv" />
         <option value="$PROJECT_DIR$/Nova/Models/build_training.py" />
+        <option value="$PROJECT_DIR$/Nova/Examples/train.py" />
         <option value="$PROJECT_DIR$/Nova/Models/model.py" />
+        <option value="$PROJECT_DIR$/Nova/Models/build_supply_location/model.py" />
+        <option value="$PROJECT_DIR$/Nova/Models/build_supply_location/aa.py" />
       </list>
     </option>
   </component>
@@ -226,7 +647,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1680" />
+    <option name="width" value="1633" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -237,7 +658,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,24 +674,20 @@
               <item name="StarCraft2-AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="StarCraft2-AI" type="462c0819:PsiDirectoryNode" />
               <item name="Nova" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StarCraft2-AI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StarCraft2-AI" type="462c0819:PsiDirectoryNode" />
-              <item name="Nova" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StarCraft2-AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="StarCraft2-AI" type="462c0819:PsiDirectoryNode" />
               <item name="Nova" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="build_supply_location" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,6 +697,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Nova/Models/build_supply_location" />
+      <recent name="$PROJECT_DIR$/Nova/Models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,7 +716,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model">
+  <component name="RunManager" selected="Python.aa">
+    <configuration name="aa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="StarCraft2-AI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nova/Models/build_supply_location" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Models/build_supply_location/aa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="build_training" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StarCraft2-AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,7 +752,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Models/build_training.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Models/build_supply_location/get_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -330,7 +774,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Models/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Models/build_supply_location/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,28 +797,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/Examples/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="StarCraft2-AI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nova/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nova/test/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,19 +828,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.build_training" />
       <item itemvalue="Python.model" />
       <item itemvalue="Python.train" />
+      <item itemvalue="Python.aa" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.model" />
         <item itemvalue="Python.build_training" />
+        <item itemvalue="Python.aa" />
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -451,15 +873,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1633" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1631" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16656192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16425425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36020407" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35908142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,9 +895,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49441788" weight="0.32967034" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49183673" visible="true" weight="0.30899936" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49441788" weight="0.32967034" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.50558215" side_tool="true" visible="true" weight="0.32935262" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.5081633" side_tool="true" weight="0.30952382" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15567766" />
@@ -532,67 +954,35 @@
     <entry file="file://$PROJECT_DIR$/python-sc2/sc2/data.py" />
     <entry file="file://$PROJECT_DIR$/python-sc2/examples/distributed_workers.py" />
     <entry file="file://$PROJECT_DIR$/Nova/Examples/s.py" />
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.511904761904762.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.2857142857142857.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.8452380952380952.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.7261904761904763.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.0595238095238095.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.4642857142857144.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.4702380952380953.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.916666666666667.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2261904761904763.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2202380952380953.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2142857142857144.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.1964285714285716.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2083333333333335.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.7202380952380952.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.511904761904762.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.2857142857142857.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.8452380952380952.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.7261904761904763.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.0595238095238095.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.4642857142857144.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.4702380952380953.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/1.916666666666667.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2261904761904763.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2202380952380953.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2142857142857144.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.1964285714285716.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/2.2083333333333335.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/Map_Image/0.7202380952380952.png" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1010564076/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/filename.png" />
+    <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/SUPPLYDEPOT.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Nova/Examples/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4095">
           <caret line="288" selection-start-line="288" selection-end-line="288" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/build_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="102" column="78" selection-start-line="102" selection-start-column="78" selection-end-line="102" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1538924868246" expanded="true" signature="1249:1310" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,28 +1009,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Nova/Examples/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/SUPPLYDEPOT.csv">
+    <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova/Models/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="296">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/aa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova/Models/build_supply_location/get_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
