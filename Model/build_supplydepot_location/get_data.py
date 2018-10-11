@@ -1,20 +1,20 @@
-import sc2
-from sc2 import run_game, maps, Race, Difficulty, Result
-from sc2.player import Bot, Computer
-from sc2 import position
-from sc2.constants import ARMORY, BARRACKS, BUNKER, \
+import sc2_X
+from sc2_X import run_game, maps, Race, Difficulty, Result
+from sc2_X.player import Bot, Computer
+from sc2_X import position
+from sc2_X.constants import ARMORY, BARRACKS, BUNKER, \
  COMMANDCENTER, ENGINEERINGBAY, FACTORY, FUSIONCORE, \
   GHOSTACADEMY, MISSILETURRET, ORBITALCOMMAND, \
    PLANETARYFORTRESS, REACTOR, REFINERY, SENSORTOWER, \
     SUPPLYDEPOT, TECHLAB
-from sc2.constants import SCV, MARINE
+from sc2_X.constants import SCV, MARINE
 import cv2
 import random
 import numpy as np
 from PIL import Image
 import csv
 
-class main(sc2.BotAI):
+class main(sc2_X.BotAI):
     def __init__(self):
         print("Start StarCraft II")
         self.supply_cnt = 0

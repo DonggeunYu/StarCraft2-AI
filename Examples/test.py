@@ -15,7 +15,7 @@ import time
 import math
 import keras
 
-#os.environ["SC2PATH"] = '/home/paperspace/Desktop/testing_model/StarCraftII/'
+#os.environ["sc2_XPATH"] = '/home/paperspace/Desktop/testing_model/StarCraftII/'
 HEADLESS = False
 
 
@@ -31,7 +31,6 @@ class SentdeBot(sc2.BotAI):
         self.do_something_after = 0
         self.use_model = use_model
         self.title = title
-
         ###############################
         # DICT {UNIT_ID:LOCATION}
         # every iteration, make sure that unit id still exists!
@@ -69,8 +68,6 @@ class SentdeBot(sc2.BotAI):
                 f.write("Model {} - {}\n".format(game_result, int(time.time())))
 
     async def on_step(self, iteration):
-
-        self.time = (self.state.game_loop/22.4) / 60
         #print('Time:',self.time)
 
         if iteration % 5 == 0:
@@ -218,6 +215,13 @@ class SentdeBot(sc2.BotAI):
             cv2.line(game_data, (0, 11), (int(line_max*population_ratio), 11), (150, 150, 150), 3)  # population ratio (supply_left/supply)
             cv2.line(game_data, (0, 7), (int(line_max*vespene_ratio), 7), (210, 200, 0), 3)  # gas / 1500
             cv2.line(game_data, (0, 3), (int(line_max*mineral_ratio), 3), (0, 255, 25), 3)  # minerals minerals/1500
+
+            map = np.zeros((self.game_info.map_size[0], self.game_info.map_size[1]))
+            for i in range(0, self.game_info.map_size[0]):
+                for j in range(0, self.game_info.map_size[1]):
+                    map[i][j] = self.get_terrain_height(position.Point2(position.Pointlike((i, j))))
+            print(map)
+
         except Exception as e:
             print(str(e))
 
@@ -430,10 +434,9 @@ class SentdeBot(sc2.BotAI):
             y[choice] = 1
             self.train_data.append([y, self.flipped])
 
-while True:
-#if 1:
-    run_game(maps.get("AbyssalReefLE"), [
-        Bot(Race.Protoss, SentdeBot(use_model=False, title=1)),
-        #Bot(Race.Protoss, SentdeBot(use_model=False, title=2)),
-        Computer(Race.Protoss, Difficulty.Easy),
-        ], realtime=False)
+
+run_game(maps.get("AbyssalReefLE"), [
+    Bot(Race.Protoss, SentdeBot(use_model=False, title=1)),
+    #Bot(Race.Protoss, SentdeBot(use_model=False, title=2)),
+    Computer(Race.Protoss, Difficulty.Easy),
+    ], realtime=False)
