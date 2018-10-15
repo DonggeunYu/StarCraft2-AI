@@ -3,11 +3,12 @@ import aiohttp
 import sc2
 import numpy as np
 
-from sc2 import map_info
+from sc2.map_info import MapInfo
+from sc2.pixel_map import PixelMap
 from sc2 import position
 from sc2.data import race_gas, race_worker, race_townhalls, ActionResult, Attribute, Race
 from sc2 import Race, Difficulty
-from sc2.constants import *  # for autocomplete
+from sc2.constants import (COMMANDCENTER)
 from sc2.ids.unit_typeid import *
 from sc2.ids.ability_id import *
 from sc2.position import Point2, Point3
@@ -24,10 +25,11 @@ class Nova(sc2.BotAI):
         print("Exe: Start Nova Bot!")
         print('-' * 50)
 
+        self._map_info = MapInfo(self)
+
     async def on_step(self, iteration):
-        print(self.time)
-        #gui.Form.loadimage([[[0,0,0], [0,0,0]], [[0,0,0], [0,0,0]]])
-        map_info.MapInfo()
+        #print(self.game_info.map_ramps)
+        await self._map_info.map_array(self)
 
 
 def main():
@@ -72,8 +74,8 @@ def main():
     #     Computer(Race.Random, Difficulty.CheatMoney)
     # ], realtime=False)
 
-    sc2.run_game(sc2.maps.get("(2)16-BitLE"), [
-        Bot(Race.Zerg, Nova()),
+    sc2.run_game(sc2.maps.get("CatalystLE"), [
+        Bot(Race.Terran, Nova()),
         Computer(Race.Protoss, Difficulty.CheatInsane)
     ], realtime=False)
 
