@@ -31,4 +31,4 @@ class MapInfo:
                 map[i][j][2] = 255
 
         cv2.imshow("Map", map)
-        cv2.waitKey(1)
+        cv2.waitKey(1)w
