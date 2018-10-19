@@ -32,15 +32,16 @@ class bot(sc2.BotAI):
         for marine in self.units(UnitTypeId.MARINE):
             #units = self.known_enemy_units[0]
             game_map[int(marine.position[0])][int(marine.position[1])] = 1
-            print(self.game_info.map_size)
-            #self.combinedActions.append(marine.attack(units))
+            for i in self.known_enemy_units: # 적 유닛을 찾는다.
+                if i.name == "Baneling": # 특정 유닛일 경우
+                    self.combinedActions.append(marine.attack(i))
             if self.already_pending_upgrade(UpgradeId.STIMPACK) == 1 and not marine.has_buff(BuffId.STIMPACK) and marine.health > 10:
                 self.combinedActions.append(marine(AbilityId.EFFECT_STIM))
 
         for enemy in self.known_enemy_units:
             game_map[int(enemy.position[0])][int(enemy.position[1])] = 2
 
-        print(game_map)
+        #print(game_map)
         await self.do_actions(self.combinedActions)
 
     async def draw_points(self):
