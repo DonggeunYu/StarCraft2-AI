@@ -18,17 +18,23 @@ class MapInfo:
         map_size = self.game.game_info.map_size
         map_rams = self.game.game_info.map_ramps
         map = np.zeros((map_size[0], map_size[1], 3))
+        
+        height = []
 
         for i in range(0, map_size[0]):
             for j in range(0, map_size[1]):
                 temp = self.game.get_terrain_height(position.Point2(position.Pointlike((i, j))))
-                print(temp, type(temp))
-                map[i][j][0] = 100
+                map[i][j][0] = temp/255.0
+                map[i][j][1] = temp/255.0
+                map[i][j][2] = temp/255.0
+
 
         for cnt in range(0, len(map_rams)):
             ramps = list(map_rams[cnt]._points)
             for i, j in ramps:
+                map[i][j][0] = 255
+                map[i][j][1] = 255
                 map[i][j][2] = 255
 
         cv2.imshow("Map", map)
-        cv2.waitKey(1)w
+        cv2.waitKey(1)

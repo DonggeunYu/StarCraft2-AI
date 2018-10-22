@@ -24,12 +24,18 @@ class Nova(sc2.BotAI):
         print('-' * 50)
         print("Exe: Start Nova Bot!")
         print('-' * 50)
+        self.start = 0
 
-        self._map_info = MapInfo(self)
+        self._map_info = MapInfo(self
+                                 )
+
 
     async def on_step(self, iteration):
         #print(self.game_info.map_ramps)
-        await self._map_info.map_array(self)
+
+        if self.start == 0:
+            await self._map_info.map_array(self)
+            self.start = 1
 
 
 def main():
