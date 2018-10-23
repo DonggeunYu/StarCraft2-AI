@@ -26,8 +26,7 @@ class Nova(sc2.BotAI):
         print('-' * 50)
         self.start = 0
 
-        self._map_info = MapInfo(self
-                                 )
+        self._map_info = MapInfo(self)
 
 
     async def on_step(self, iteration):
