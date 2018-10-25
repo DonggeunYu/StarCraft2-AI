@@ -1,0 +1,95 @@
+import  sc2
+from sc2 import Race, Difficulty
+from sc2.player import Bot, Computer
+from sc2.position import Point2, Point3
+from sc2.ids.unit_typeid import UnitTypeId
+from sc2.ids.buff_id import BuffId
+from sc2.ids.effect_id import EffectId
+from sc2.ids.upgrade_id import UpgradeId
+from sc2.ids.ability_id import AbilityId
+
+import random
+
+class bot(sc2.BotAI):
+
+    def __init__(self):
+        print("Start")
+
+    async def on_step(self, iteration: int):
+        await self.print_unit()
+        await  self.draw_points()
+        await self._client.send_debug()  # this is important, otherwise nothing will be drawn
+
+    async def print_unit(self):
+        self.combinedActions = []
+        for marine in self.units(UnitTypeId.MARINE):
+            units = self.known_enemy_units[0]
+            units.
+            self.combinedActions.append(marine.attack(units))
+            if self.already_pending_upgrade(UpgradeId.STIMPACK) == 1 and not marine.has_buff(BuffId.STIMPACK) and marine.health > 10:
+                self.combinedActions.append(marine(AbilityId.EFFECT_STIM))
+
+        await self.do_actions(self.combinedActions)
+
+    async def draw_points(self):
+        all_points = [
+            Point2((x, y))
+            for x in range(self._game_info.pathing_grid.width)
+            for y in range(self._game_info.pathing_grid.height)
+            if self._game_info.pathing_grid[(x, y)] == 0
+        ]
+        for point in all_points:
+            height = self.get_terrain_height(point)
+            # create the bottom left and top right corner of the rectangle we want to draw
+            # use height + 0.01 to draw over the map, not at the same height or it wont show
+            location3d1 = Point3((point.x - 0.25, point.y - 0.25, self.terrain_to_z_height(height) + 0.01))
+            location3d2 = Point3((point.x + 0.25, point.y + 0.25, self.terrain_to_z_height(height) + 0.01))
+            r = 100  # red
+            g = 50  # green
+            b = 50  # blue
+            self._client.debug_box_out(location3d1, location3d2, Point3((r, g, b)))
+
+    def terrain_to_z_height(self, h):
+        # this is a custom function i wrote to get the right z heights :D
+        # it is really weird, maybe you can fix it in another way
+        # the height of the terrain and the z coordinate of a point are two
+        # different things, thats why this is needed
+        if h > 143:
+            return h - 131
+        elif h == 143:
+            return 12
+        elif 140 < h < 143:
+            return h - 131
+        elif h == 140:
+            return 10
+        elif 138 < h < 140:
+            return h - 130
+        elif h == 138:
+            return 8
+        elif 135 < h < 138:
+            return h - 129.5
+        elif h == 135:
+            return 6
+        elif 133 < h < 135:
+            return h - 129
+        elif h == 133:
+            return 4
+        elif 130 < h < 133:
+            return h - 128.5
+        elif h == 130:
+            return 2
+        elif h < 130:
+            return h - 128
+        else:
+            print("didnt know what to do with height {h}")
+            return 15
+
+def main():
+    sc2.run_game(sc2.maps.get("DefeatZerglingsAndBanelings"),[
+        Bot(Race.Terran, bot()),
+        Computer(Race.Zerg, Difficulty.VeryHard)
+    ], realtime=True)
+
+
+if __name__ == "__main__":
+    main()
