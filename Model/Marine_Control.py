@@ -8,7 +8,11 @@ from sc2.ids.effect_id import EffectId
 from sc2.ids.upgrade_id import UpgradeId
 from sc2.ids.ability_id import AbilityId
 
+import numpy as np
 import random
+
+np.set_printoptions(threshold=np.nan)
+
 
 class bot(sc2.BotAI):
 
@@ -22,13 +26,21 @@ class bot(sc2.BotAI):
 
     async def print_unit(self):
         self.combinedActions = []
+        map_size = self.game_info.map_size
+        game_map = np.zeros((map_size[0], map_size[1]))
+
         for marine in self.units(UnitTypeId.MARINE):
-            units = self.known_enemy_units[0]
-            units.
-            self.combinedActions.append(marine.attack(units))
+            #units = self.known_enemy_units[0]
+            game_map[int(marine.position[0])][int(marine.position[1])] = 1
+            print(self.game_info.map_size)
+            #self.combinedActions.append(marine.attack(units))
             if self.already_pending_upgrade(UpgradeId.STIMPACK) == 1 and not marine.has_buff(BuffId.STIMPACK) and marine.health > 10:
                 self.combinedActions.append(marine(AbilityId.EFFECT_STIM))
 
+        for enemy in self.known_enemy_units:
+            game_map[int(enemy.position[0])][int(enemy.position[1])] = 2
+
+        print(game_map)
         await self.do_actions(self.combinedActions)
 
     async def draw_points(self):
