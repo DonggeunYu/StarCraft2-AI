@@ -41,7 +41,6 @@ class bot(sc2.BotAI):
         for enemy in self.known_enemy_units:
             game_map[int(enemy.position[0])][int(enemy.position[1])] = 2
 
-
         #print(game_map)
         await self.do_actions(self.combinedActions)
 
