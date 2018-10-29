@@ -33,7 +33,7 @@ class bot(sc2.BotAI):
             #units = self.known_enemy_units[0]
             game_map[int(marine.position[0])][int(marine.position[1])] = 1
             for i in self.known_enemy_units: # 적 유닛을 찾는다.
-                if i.name == "Baneling": # 특정 유닛일 경우
+                if i.name == "Baneling":# 특정 유닛일 경우
                     self.combinedActions.append(marine.attack(i))
             if self.already_pending_upgrade(UpgradeId.STIMPACK) == 1 and not marine.has_buff(BuffId.STIMPACK) and marine.health > 10:
                 self.combinedActions.append(marine(AbilityId.EFFECT_STIM))
