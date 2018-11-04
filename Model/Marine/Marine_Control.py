@@ -27,6 +27,7 @@ class bot(sc2.BotAI):
     async def print_unit(self):
         self.combinedActions = []
         map_size = self.game_info.map_size
+        print(map_size)
         game_map = np.zeros((map_size[0], map_size[1]))
 
         for marine in self.units(UnitTypeId.MARINE):
