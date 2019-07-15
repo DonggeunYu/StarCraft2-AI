@@ -1,4 +1,5 @@
 # StarCraft2-AI
+중단ㅠㅠ
 ## Reference
 1. [python-sc2](https://github.com/Yudonggeun/python-sc2)(MIT License)
 2. [Google Colaboratory](https://medium.com/@paul.steven.conyngham/how-to-get-blizzard-google-deepminds-pysc2-working-for-free-on-colabs-be2e68f18893)
